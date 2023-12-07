@@ -41,3 +41,4 @@ function computeWage(){
 
 attendanceCheck()
 computeWage()
+console.log(employeeDetails);
