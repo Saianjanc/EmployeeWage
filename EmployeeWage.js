@@ -2,40 +2,28 @@ console.log("Welcome to Employee Wage Computation");
 let employeeDetails =[
     {
         eid:101,
-        name:"SaiAnjan",
-        attendance:null,
-        workhrs:null,
-        dailywage:null
+        name:"SaiAnjan"
     },
     {
         eid:102,
-        name:"Yogesh",
-        attendance:null,
-        workhrs:null,
-        dailywage:null
+        name:"Yogesh"
     },
     {
         eid:103,
-        name:"Uday",
-        attendance:null,
-        workhrs:null,
-        dailywage:null
+        name:"Uday"
     },
     {
         eid:104,
-        name:"Madhu",
-        attendance:null,
-        workhrs:null,
-        dailywage:null
+        name:"Madhu"
     }
 ]
 
 function attendanceCheck(){
     employeeDetails.forEach((ele)=>{
-        if (ele.attendance==null) {
-            ele.attendance=Math.round(Math.random())
-            console.log(ele.attendance);
-        }
+        const attendance=Math.round(Math.random())
+        attendance ? ele.attendance="Present":ele.attendance="Absent"
     })
+    console.log(employeeDetails);
 }
 attendanceCheck()
+
