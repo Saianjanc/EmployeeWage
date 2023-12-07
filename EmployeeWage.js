@@ -16,7 +16,7 @@ let employeeDetails =[
         eid:104,
         name:"Madhu"
     }
-]
+
 
 
 console.log(employeeDetails);
